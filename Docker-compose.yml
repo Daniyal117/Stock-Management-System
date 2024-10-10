@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .  # The build context points to the current directory
+    command: >
+      bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000"
+    container_name: myapp
+      #
+    volumes:
+      - .:/app 
+    ports:
+      - "8000:8000"  # Map port 8000 on the container to port 8000 on the host
+  redis:
+    image: "redis:alpine"
