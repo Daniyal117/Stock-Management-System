@@ -48,8 +48,8 @@ It uses Redis to store frequently accessed data, making it faster to retrieve in
 Use this command to clone the project:
 
 ```bash
-git clone https://github.com/your-username/stock-management-system.git
-cd stock-management-system
+git clone https://github.com/Daniyal117/Stock-Management-System.git
+cd Stock-Management-System
 ```
 
 ### 2. For Windows:
