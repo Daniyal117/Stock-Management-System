@@ -113,7 +113,7 @@ docker build -t app .
 ### Run the Docker Container
 Use this command to start the application in a Docker container:
 ```bash
-docker run -p 8000:8000 app
+docker-compose up --build
 ```
 
 
